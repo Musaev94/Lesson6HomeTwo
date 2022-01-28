@@ -13,9 +13,13 @@
 		CE80319C27A3F5F90011F032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE80319A27A3F5F90011F032 /* Main.storyboard */; };
 		CE80319E27A3F5FB0011F032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE80319D27A3F5FB0011F032 /* Assets.xcassets */; };
 		CE8031A127A3F5FB0011F032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE80319F27A3F5FB0011F032 /* LaunchScreen.storyboard */; };
+		F8EAB7226E6926AD6E0DFD8C /* Pods_Lesson6HomeTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D24C9FB314DF7F1E55A1EB /* Pods_Lesson6HomeTwo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02D24C9FB314DF7F1E55A1EB /* Pods_Lesson6HomeTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lesson6HomeTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FDBEB9366CA1AEEC4EF756F /* Pods-Lesson6HomeTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson6HomeTwo.release.xcconfig"; path = "Target Support Files/Pods-Lesson6HomeTwo/Pods-Lesson6HomeTwo.release.xcconfig"; sourceTree = "<group>"; };
+		A5EB77012A4683D6F528429D /* Pods-Lesson6HomeTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson6HomeTwo.debug.xcconfig"; path = "Target Support Files/Pods-Lesson6HomeTwo/Pods-Lesson6HomeTwo.debug.xcconfig"; sourceTree = "<group>"; };
 		CE80319127A3F5F90011F032 /* Lesson6HomeTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson6HomeTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE80319427A3F5F90011F032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE80319627A3F5F90011F032 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8EAB7226E6926AD6E0DFD8C /* Pods_Lesson6HomeTwo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EA0FB776071685FC9B44987 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02D24C9FB314DF7F1E55A1EB /* Pods_Lesson6HomeTwo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE6315FD023BF8BED5FB0642 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5EB77012A4683D6F528429D /* Pods-Lesson6HomeTwo.debug.xcconfig */,
+				1FDBEB9366CA1AEEC4EF756F /* Pods-Lesson6HomeTwo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE80318827A3F5F90011F032 = {
 			isa = PBXGroup;
 			children = (
 				CE80319327A3F5F90011F032 /* Lesson6HomeTwo */,
 				CE80319227A3F5F90011F032 /* Products */,
+				BE6315FD023BF8BED5FB0642 /* Pods */,
+				3EA0FB776071685FC9B44987 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE8031A527A3F5FB0011F032 /* Build configuration list for PBXNativeTarget "Lesson6HomeTwo" */;
 			buildPhases = (
+				FFD358D03835C0E5787C4C7B /* [CP] Check Pods Manifest.lock */,
 				CE80318D27A3F5F90011F032 /* Sources */,
 				CE80318E27A3F5F90011F032 /* Frameworks */,
 				CE80318F27A3F5F90011F032 /* Resources */,
+				46661F5DC9A139A41FB1DFCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46661F5DC9A139A41FB1DFCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lesson6HomeTwo/Pods-Lesson6HomeTwo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lesson6HomeTwo/Pods-Lesson6HomeTwo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lesson6HomeTwo/Pods-Lesson6HomeTwo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD358D03835C0E5787C4C7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lesson6HomeTwo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE80318D27A3F5F90011F032 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		CE8031A627A3F5FB0011F032 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5EB77012A4683D6F528429D /* Pods-Lesson6HomeTwo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +381,7 @@
 		};
 		CE8031A727A3F5FB0011F032 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FDBEB9366CA1AEEC4EF756F /* Pods-Lesson6HomeTwo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
